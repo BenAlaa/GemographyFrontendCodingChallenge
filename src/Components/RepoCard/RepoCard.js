@@ -17,7 +17,7 @@ const RepoCard = ({repo}) => {
     }
   } = repo;
   return ( 
-    <a className="repo-Container" href={html_url} target="_blank">
+    <a className="repo-Container" href={html_url} target="_blank" rel="noreferrer">
       <div className="avatar-container primary-border-color-dark" style={{backgroundImage: `url(${avatar_url})`}}></div>
       <div className="info-container">
         <div className="main-info-container">
@@ -35,7 +35,7 @@ const RepoCard = ({repo}) => {
             <MdErrorOutline className="star-icon"/> 
             <div className="stars-count">{open_issues}</div>
           </div>
-          <div className="create-duration"> {`Submitted ${getDiffInDays(new Date(), created_at)} ago by ${login}`}</div>
+          <div className="create-duration"> {`Submitted ${getDiffInDays(new Date(), created_at)} days ago by ${login}`}</div>
         </div>
       </div>
     </a>

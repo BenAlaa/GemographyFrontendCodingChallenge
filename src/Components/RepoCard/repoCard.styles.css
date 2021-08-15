@@ -223,7 +223,8 @@
     width: 70%;
   }
   .repo-name {
-    font-size:16px;
+    overflow: hidden;
+    font-size:14px;
     border-radius: 5px;
     color:#fff;
     padding: 5px;

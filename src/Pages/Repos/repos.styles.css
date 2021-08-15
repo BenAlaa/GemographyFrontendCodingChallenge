@@ -1,5 +1,5 @@
 .repos-container {
-  width: 100%;
+  padding:10px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
