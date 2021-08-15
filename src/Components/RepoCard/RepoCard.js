@@ -1,7 +1,7 @@
 import './repoCard.styles.css';
 import {FaStar} from 'react-icons/fa';
 import {MdErrorOutline} from 'react-icons/md';
-import {roundThousandToK, getDiffInDays} from '../../Utils/helpers';
+import {roundThousandToK, getDiffInDays, formateLongWord} from '../../Utils/helpers';
 
 const RepoCard = ({repo}) => {
   const {
@@ -21,7 +21,7 @@ const RepoCard = ({repo}) => {
       <div className="avatar-container primary-border-color-dark" style={{backgroundImage: `url(${avatar_url})`}}></div>
       <div className="info-container">
         <div className="main-info-container">
-          <div className="repo-name primary-bgcolor-dark">{name}</div>
+          <div className="repo-name primary-bgcolor-dark">{formateLongWord(name, 30)}</div>
           <div className="repo-description">{description}</div>
         </div>
         <div className="counters-container">

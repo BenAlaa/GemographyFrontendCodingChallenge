@@ -22,3 +22,10 @@ export const roundThousandToK = (number) => {
   if (number < 1000) return number;
   return `${Math.floor(number/1000*10)/10}K`
 }
+
+
+export const formateLongWord = (word, length) => {
+  if (word.length < length ) return word;
+  return `${word.slice(0, 20)}...`
+
+}
